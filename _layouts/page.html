@@ -123,12 +123,12 @@ layout: default
                             </li>
                             {% endif %}
                             <!-- add jianshu add target = "_blank" to <a> by BY -->
-                            {% if site.jianshu_username %}
+                            {% if site.instagram_username %}
                             <li>
-                                <a target="_blank" href="https://www.jianshu.com/u/{{ site.jianshu_username }}">
+                                <a target="_blank" href="https://www.instagram.com/u/{{ site.instagram_username }}">
                                     <span class="fa-stack fa-lg">
                                         <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa  fa-stack-1x fa-inverse">简</i>
+                                        <i class="fa  fa-stack-1x fa-inverse">Ins</i>
                                     </span>
                                 </a>
                             </li>
@@ -189,15 +189,6 @@ layout: default
                             <p>✉️ {{site.email}}</p>
                         {% endif %}
                     </div>
-                </section>
-                <!-- Friends Blog -->
-                {% if site.friends %}
-                <hr>
-                <h5>FRIENDS</h5>
-                <ul class="list-inline">
-                    {% for friend in site.friends %}
-                        <li><a href="{{friend.href}}">{{friend.title}}</a></li>
-                    {% endfor %}
                 </ul>
                 {% endif %}
     		</div>
